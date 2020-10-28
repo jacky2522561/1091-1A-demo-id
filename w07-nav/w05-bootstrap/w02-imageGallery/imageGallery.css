@@ -1,0 +1,24 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  object-fit: cover;
+  max-width: 18%;
+  margin: 1%;
+}
+
+p {
+  font-size: 50px;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #2034e781;
+  font-family: cursive;
+  border-bottom: 3px solid #2034e781;
+  padding-bottom: 5px;
+  width: 19.3%;
+  margin: 1.2%;
+}
+.name{
+  text-align: center;
+}

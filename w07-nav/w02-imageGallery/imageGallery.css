@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-image: url(https://images.unsplash.com/photo-1540449078594-94d6173856c0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max); */
+}
+
+img {
+  object-fit: cover;
+  max-width: 18%;
+  margin: 1%;
+}
+
+p {
+  font-size: 35px;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #2034e781;
+  font-family: cursive;
+  border-bottom: 2px solid #0a126181;
+  padding-bottom: 5px;
+  width: 19.3%;
+  margin: 1.2%;
+}
+.name{
+  text-align: center;
+  border-style: solid;
+  /* border-image-source: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmorcs7ruYUl4WNGr_r26i7rh4ZOoVknK29w&usqp=CAU); */
+  border-image-width: 40px;
+}
