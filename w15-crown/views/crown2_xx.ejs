@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/index.html" class="logo-container">
+        <img src="/assets/crown.svg" alt="" />
+      </a>
+      <div class="options">
+        <a href="#" class="option">Shop</a>
+        <a href="#" class="option">Contact</a>
+        <a href="#" class="option">Sign In</a>
+        <div class="cart-icon">
+          <img class="shopping-icon" src="/assets/shopping-bag.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <h3><%= title %></h3>
+    <div class="homepage">
+      <div class="directory-menu">
+        <% for(let i=0; i<data.length-2 ; i++) { %>
+          <div class="menu-item">
+            <img
+              class="background-image"
+              src="<%= data[i].remote_url %>"
+              alt=""
+            />
+            <a href="/hats.html" class="content">
+              <h1 class="title"><%= data[i].name.toUpperCase() %></h1>
+              <span class="subtitle">SHOP NOW</span>
+            </a>
+          </div>
+        <% } %>
+
+
+        <div class="large menu-item">
+          <img
+            class="background-image"
+            src="<%= data[3].remote_url %>"
+            alt=""
+          />
+          <a href="/womens.html" class="content">
+            <h1 class="title"><%= data[3].name.toUpperCase() %></h1>
+            <span class="subtitle">SHOP NOW</span>
+          </a>
+        </div>
+        <div class="large menu-item">
+          <img
+            class="background-image"
+            src="<%= data[4].remote_url %>"
+            alt=""
+          />
+          <a href="/mens.html" class="content">
+            <h1 class="title"><%= data[4].name.toUpperCase() %></h1>
+            <span class="subtitle">SHOP NOW</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
